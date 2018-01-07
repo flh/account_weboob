@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* account_weboob
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-23 15:46+0000\n"
+"PO-Revision-Date: 2016-12-23 15:46+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_weboob
+#: model:ir.actions.act_window,help:account_weboob.action_weboob_account_import_list
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"          Click to declare a new Weboob account.\n"
+"        </p><p>\n"
+"          If you have set up a Weboob instance to connect to your bank\n"
+"          website, you can map here Weboob account identifiers to Odoo\n"
+"          bank journals. This will allow Odoo to automatically fetch\n"
+"          bank statements using Weboob.\n"
+"        </p>\n"
+"      "
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"          Cliquez pour déclarer un compte bancaire Weboob.\n"
+"        </p><p>\n"
+"          Si vous avez configuré l'accès à vous comptes bancaires dans\n"
+"          Weboob, vous pouvez déclarer ici les identifiants Weboob de\n"
+"          vos compte et les associer à des journaux Odoo. Ceci permettra\n"
+"          d'importer automatiquement les relevés bancaires avec Weboob.\n"
+"        </p>\n"
+"      "
+
+#. module: account_weboob
+#: view:weboob.bank.account:account_weboob.weboob_account_import_form
+msgid "Activate"
+msgstr "Activer"
+
+#. module: account_weboob
+#: selection:weboob.bank.account,state:0
+msgid "Active"
+msgstr "Actif"
+
+#. module: account_weboob
+#: field:weboob.bank.account,create_uid:0
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: account_weboob
+#: field:weboob.bank.account,create_date:0
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: account_weboob
+#: view:weboob.bank.account:account_weboob.weboob_account_import_form
+msgid "Disable"
+msgstr "Désactiver"
+
+#. module: account_weboob
+#: field:weboob.bank.account,display_name:0
+msgid "Display Name"
+msgstr "Nom"
+
+#. module: account_weboob
+#: model:ir.model,name:account_weboob.model_weboob_bank_account
+msgid "External Weboob Bank Account"
+msgstr "Compte bancaire Weboob externe"
+
+#. module: account_weboob
+#: field:weboob.bank.account,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: account_weboob
+#: selection:weboob.bank.account,state:0
+msgid "Inactive"
+msgstr "Inactif"
+
+#. module: account_weboob
+#: field:weboob.bank.account,journal_id:0
+msgid "Journal"
+msgstr "Journal"
+
+#. module: account_weboob
+#: field:weboob.bank.account,__last_update:0
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: account_weboob
+#: field:weboob.bank.account,latest_unique_id:0
+msgid "Last Unique Id"
+msgstr "Dernier identifiant unique"
+
+#. module: account_weboob
+#: field:weboob.bank.account,write_uid:0
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: account_weboob
+#: field:weboob.bank.account,write_date:0
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: account_weboob
+#: selection:weboob.bank.account,state:0
+msgid "Not found in Weboob"
+msgstr "Non trouvé par Weboob"
+
+#. module: account_weboob
+#: view:weboob.bank.account:account_weboob.weboob_account_import_form
+msgid "Run import now"
+msgstr "Importer maintenant"
+
+#. module: account_weboob
+#: field:weboob.bank.account,state:0
+msgid "Status"
+msgstr "État"
+
+#. module: account_weboob
+#: model:ir.actions.act_window,name:account_weboob.action_weboob_account_import_list
+#: model:ir.ui.menu,name:account_weboob.menu_weboob_account_import
+#: view:weboob.bank.account:account_weboob.weboob_account_import_form
+#: view:weboob.bank.account:account_weboob.weboob_account_import_tree
+msgid "Weboob Account Import"
+msgstr "Import bancaire Weboob"
+
+#. module: account_weboob
+#: field:weboob.bank.account,weboob_name:0
+msgid "Weboob Identifier"
+msgstr "Identifiant Weboob"
+

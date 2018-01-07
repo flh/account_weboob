@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <record model="ir.ui.view" id="weboob_account_import_form">
+      <field name="name">weboob.bank.account.form</field>
+      <field name="model">weboob.bank.account</field>
+      <field name="arch" type="xml">
+        <form>
+          <header>
+            <button string="Activate" type="object" name="action_activate" states="inactive" class="oe_highlight"/>
+            <button string="Run import now" type="object" name="run_imports" states="active,not_found" class="oe_highlight"/>
+            <button string="Disable" type="object" name="action_deactivate" states="active,not_found"/>
+            <field name="state" widget="statusbar" nolabel="1" statusbar_visible="active,not_found,inactive"/>
+          </header>
+          <sheet string="Weboob Account Import">
+            <h1><label string="Weboob Account Import"/></h1>
+            <group>
+              <field name="weboob_name"/>
+              <field name="journal_id"/>
+              <field name="latest_unique_id"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="weboob_account_import_tree">
+      <field name="name">weboob.bank.account.tree</field>
+      <field name="model">weboob.bank.account</field>
+      <field name="arch" type="xml">
+        <tree editable="bottom" colors="black:state=='active';gray:state=='inactive';red:state=='not_found'" string="Weboob Account Import">
+          <field name="weboob_name"/>
+          <field name="journal_id"/>
+          <field name="latest_unique_id"/>
+          <field name="state"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_weboob_account_import_list">
+      <field name="name">Weboob Account Import</field>
+      <field name="res_model">weboob.bank.account</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_type">form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Click to declare a new Weboob account.
+        </p><p>
+          If you have set up a Weboob instance to connect to your bank
+          website, you can map here Weboob account identifiers to Odoo
+          bank journals. This will allow Odoo to automatically fetch
+          bank statements using Weboob.
+        </p>
+      </field>
+    </record>
+
+    <menuitem id="menu_weboob_account_import"
+      parent="account.account_account_menu"
+      action="action_weboob_account_import_list" sequence="5"/>
+  </data>
+</openerp>
